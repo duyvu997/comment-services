@@ -9,7 +9,10 @@
   },
   "live": {
     "overwrite": {
-      "driver": "pg"
+      "driver": "pg",
+      "ssl": {
+        "rejectUnauthorized": false
+      }
     }
   },
   "sql-file": true

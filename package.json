@@ -6,7 +6,9 @@
   "author": "duyvu997 <ngocduy0997@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon --inspect ./src/server.js",
+    "start": "node ./src/server.js",
+    "dev": "nodemon --inspect ./src/server.js",
+    "heroku-postbuild": "yarn db-migrate up --env live",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
